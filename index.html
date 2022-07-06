@@ -161,6 +161,13 @@
     <script src="./asset/js/jquery.simplyscroll.min.js"></script>
 
     <script>
+        audio.oncanplaythrough = function() { // 로드 완료되면 실행
+            audio.play();
+        };
+        video.oncanplaythrough = function() { // 로드 완료되면 실행
+            video.play();
+        };
+
         //video btn
         $(".btn_pause").click(function() {
             var txt = $(this).children("span").text();
