@@ -12,8 +12,12 @@ const audio = videoPlayer.querySelector('.audio')
 //Play and Pause button
 playButton.addEventListener('click', (e) => {
     if (video.paused) {
-        audio.play();
-        video.play();
+        audio.oncanplaythrough = function() { // 로드 완료되면 실행
+            audio.play();
+        };
+        video.oncanplaythrough = function() { // 로드 완료되면 실행
+            video.play();
+        };
         e.target.src = './asset/img/pause_white_24dp.svg'
     } else {
         audio.pause();
