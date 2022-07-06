@@ -33,7 +33,7 @@
         <audio autoplay loop class="audio">
             <source src="./asset/video/bg_audio.mp3" type="audio/mp3">
         </audio>
-        <video poster="./asset/img/C0014_10_Moment.jpg" class="video" autoplay muted="muted" loop>
+        <video id="vid" poster="./asset/img/C0014_10_Moment.jpg" class="video" autoplay muted="muted" loop>
             <source src="./asset/video/bg_video_wide.mp4" type="video/mp4">
         </video>
         <div class="player-controls">
@@ -161,7 +161,7 @@
     <script src="./asset/js/jquery.simplyscroll.min.js"></script>
 
     <script>
-        $("video").play();
+        document.getElementById('vid').play();
 
         //video btn
         $(".btn_pause").click(function() {
