@@ -680,6 +680,9 @@ media query
     .partners {
         bottom: 20px;
     }
+    .partners h3 {
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -739,9 +742,6 @@ media query
     .right_side p {
         font-size: 14px;
         margin-top: 10px;
-    }
-    .partners h3 {
-        margin-bottom: 10px;
     }
 }
 
