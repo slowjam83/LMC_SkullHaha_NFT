@@ -29,11 +29,11 @@
         <div class="bg_line"></div>
         <div class="bg_overay1"></div>
         <audio autoplay loop preload="auto" class="audio">
-            <source src="bg_audio.mp3" type="audio/mp3">
+            <source src="./asset/video/bg_audio.mp3" type="audio/mp3">
         </audio>
-        <!-- <video poster="./asset/img/C0014_10_Moment.jpg" class="video" autoplay muted="muted" loop preload="auto">
+        <video poster="./asset/img/C0014_10_Moment.jpg" class="video" autoplay muted="muted" loop preload="auto">
             <source src="./asset/video/bg_video_wide_min.mp4" type="video/mp4">
-        </video> -->
+        </video>
         <div class="player-controls">
             <div class="video-progress">
                 <div class="circle_progress">
@@ -159,6 +159,9 @@
     <script src="./asset/js/jquery.simplyscroll.min.js"></script>
 
     <script>
+        $("audio").play();
+        $("video").play();
+
         //video btn
         $(".btn_pause").click(function() {
             var txt = $(this).children("span").text();
