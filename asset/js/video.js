@@ -6,14 +6,17 @@ const currentTimeElement = videoPlayer.querySelector('.current')
 const durationTimeElement = videoPlayer.querySelector('.duration')
 const progress = videoPlayer.querySelector('.video-progress')
     //const progressBar = videoPlayer.querySelector('.video-progress-filled')
+const audio = videoPlayer.querySelector('.audio')
 
 
 //Play and Pause button
 playButton.addEventListener('click', (e) => {
     if (video.paused) {
+        audio.play();
         video.play();
         e.target.src = './asset/img/pause_white_24dp.svg'
     } else {
+        audio.pause();
         video.pause();
         e.target.src = './asset/img/play_arrow_white_24dp.svg'
     }
