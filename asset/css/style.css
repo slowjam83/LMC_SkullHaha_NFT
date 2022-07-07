@@ -671,11 +671,14 @@ media query
 }
 
 @media (max-width: 720px) {
+    header {
+        padding: 10px 0;
+    }
     article {
         top: calc(50% - 32px);
     }
     .partners {
-        bottom: 30px;
+        bottom: 20px;
     }
 }
 
@@ -747,9 +750,6 @@ media query
     .player-controls {
         top: calc(50% - 20px);
     }
-    header {
-        padding: 10px 0;
-    }
     article {
         top: calc(50% - 6px);
     }
@@ -764,8 +764,5 @@ media query
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-    }
-    .partners {
-        bottom: 20px;
     }
 }
