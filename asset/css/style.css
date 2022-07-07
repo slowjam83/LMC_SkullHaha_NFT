@@ -742,4 +742,30 @@ media query
     }
 }
 
-@media (max-height: 920px) {}
+@media (max-height: 520px) {
+    .bg_line,
+    .player-controls {
+        top: calc(50% - 20px);
+    }
+    header {
+        padding: 10px 0;
+    }
+    article {
+        top: calc(50% - 6px);
+    }
+    .left_side {
+        line-height: 1.2;
+    }
+    .left_side h1 {
+        margin: 0 0 100px;
+    }
+    .right_side p {
+        height: 40px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .partners {
+        bottom: 20px;
+    }
+}
